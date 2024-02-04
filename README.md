@@ -42,6 +42,21 @@ A couple of calculated columns were added to the Stores table, one for country n
 
 A Dates Hierarchy (Start of Year, Start of Quarter, Start of Month, Start of Week, Date) was added to the Dates table and a Geography Hierarchy (Region, Country, Country Region) was added to the Stores table to allow drilling down in visualisations. 
 
+## Building the Customer Detail Page
+
+I chose the 'high contrast' theme and selected darker colours from the theme for my visualisations. 
+
+I used a card to display the measure created earlier for Total Customers, and created a further measure for Revenue per Customer which I displayed on another card. The number of customers in each country was visualised in a donut chart, and the the number of customers for each product category in a bar chart. Next I added a line chart showing the total customers over time, which is displayed by year but can be drilled down to months, and added a forecast for the next 10 months with a 95% confidence interval.
+
+The top 20 customers by revenue were displayed as a table, with conditional formatting bars on the revenue column, and their total orders also included.  For the top customer by revenue, three cards were added displaying their name, number of orders and total revenue. The name card used the Full Name field with a TopN filter set to show the top 1 value by Total Revenue. I copied this card to create the other two, and added the Total Orders and Total Revenue measures. 
+
+Finally a date slicer was added to filter the data by year.
+
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/8b4dd9fc-b1a8-4e52-8cf0-5de65937f836)
+
+
+
+
 
 
 
