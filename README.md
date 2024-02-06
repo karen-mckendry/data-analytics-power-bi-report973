@@ -46,7 +46,7 @@ A Dates Hierarchy (Start of Year, Start of Quarter, Start of Month, Start of Wee
 
 I chose the 'high contrast' theme and selected darker colours from the theme for my visualisations. 
 
-I used a card to display the measure created earlier for Total Customers, and created a further measure for Revenue per Customer which I displayed on another card. The number of customers in each country was visualised in a donut chart, and the the number of customers for each product category in a bar chart. Next I added a line chart showing the total customers over time, which is displayed by year but can be drilled down to months, and added a forecast for the next 10 months with a 95% confidence interval.
+I used a card to display the measure created earlier for Total Customers, and created a further measure `Revenue Per Customer = [Total Revenue] / [Total Customers]` which I displayed on another card. The number of customers in each country was visualised in a donut chart, and the the number of customers for each product category in a bar chart. Next I added a line chart showing the total customers over time, which is displayed by year but can be drilled down to months, and added a forecast for the next 10 months with a 95% confidence interval.
 
 The top 20 customers by revenue were displayed as a table, with conditional formatting bars on the revenue column, and their total orders also included.  For the top customer by revenue, three cards were added displaying their name, number of orders and total revenue. The name card used the Full Name field with a TopN filter set to show the top 1 value by Total Revenue. I copied this card to create the other two, and added the Total Orders and Total Revenue measures. 
 
@@ -54,7 +54,13 @@ Finally a date slicer was added to filter the data by year.
 
 ![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/8b4dd9fc-b1a8-4e52-8cf0-5de65937f836)
 
+## The Executive Summary Page
 
+For the Executive Summary, first I used copies of a card visual from the Customer Detail page to create three new card visuals with the key measures of Total Revenue, Total Orders and Total Profit. Similarly I copied the line graph from the Customer Detail page and amended the y-axis to Total Revenue, removed and readded the Date Hierarchy with Start of Year, Start of Quarter, Start of Month (drill-down did not function without doing this), and added a forecast as above. Two copies of the donut chart from the Customer Detail page were adapted for Total Revenue by country the stores were located in, and Total Revenue by store type. The bar chart was also adapted from the Customer Detail Page, with the chart type changed and showing Total Orders by category instead. 
+
+Three KPI visuals were added for Revenue, Profit and Orders, each showing the most recent quarter's figures, with a target equal to the previous quarter plus 5%. 
+
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/bbe58d7f-5eb7-4b67-a13c-e71c09efedda)
 
 
 
