@@ -62,6 +62,30 @@ Three KPI visuals were added for Revenue, Profit and Orders, each showing the mo
 
 ![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/bbe58d7f-5eb7-4b67-a13c-e71c09efedda)
 
+## The Product Detail Page
+
+This page looks at which products are performing well, with the ability to filter by product category and country. 
+
+Three gauge visuals show the current performance of revenue, profit and orders against target values of 10% greater than the previous quarter. Measures were created for the previous quarter's performance, eg for revenue `Previous Quarter Revenue = CALCULATE(TOTALQTD('Measures Table'[Total Revenue], PREVIOUSQUARTER(LASTDATE('Dates'[Date]))))` and for the target. Conditional formatting was applied to display the callout value in red if the target had not yet been met, and black otherwise, using measures, eg `Colours Orders Gauge = SWITCH(TRUE(),[Orders QTD] >= [Target 2 Orders for Quarter],"Black","Red")`. 
+
+Two cards were added to display current filters for product category and country. I created an area chart to show revenue for each product category over time. Next a table of the top 10 products in terms of revenue was added, showing total revenue, total customers, orders and profit per order.  
+
+To see which products are both the most profitable and the best selling, I added a scatter graph of products' profit per item against total quantity sold.  
+
+The screenshot below shows the finished page without any filters:  
+
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/8494ecec-79de-48bf-8d88-5cdd366dcc71)
+
+In order for the user to filter by product category and country, I created a pop-out slicer toolbar, accessible from the filter button on the navigation toolbar on the left. Clicking on the filter icon uses a bookmark to make the toolbar visible, and similarly clicking on the back button uses a bookmark to hide it again.
+
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/d78f925e-7e0f-47ea-8969-6953401e9ba3)
+
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/c4419339-cd21-4ec1-be09-bcdbf59f7450)
+
+
+
+
+
 
 
 
