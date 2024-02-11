@@ -66,7 +66,7 @@ Three KPI visuals were added for Revenue, Profit and Orders, each showing the mo
 
 This page looks at which products are performing well, with the ability to filter by product category and country. 
 
-Three gauge visuals show the current performance of revenue, profit and orders against target values of 10% greater than the previous quarter. Measures were created for the previous quarter's performance, eg for revenue `Previous Quarter Revenue = CALCULATE(TOTALQTD('Measures Table'[Total Revenue], PREVIOUSQUARTER(LASTDATE('Dates'[Date]))))` and for the target. Conditional formatting was applied to display the callout value in red if the target had not yet been met, and black otherwise, using measures, eg `Colours Orders Gauge = SWITCH(TRUE(),[Orders QTD] >= [Target 2 Orders for Quarter],"Black","Red")`. 
+Three gauge visuals show the current performance of revenue, profit and orders against target values of 10% greater than the previous quarter. Measures were created for the previous quarter's performance, eg for revenue `Previous Quarter Revenue = CALCULATE(TOTALQTD('Measures Table'[Total Revenue], `PREVIOUSQUARTER(LASTDATE('Dates'[Date]))))` and for the target. Conditional formatting was applied to display the callout value in red if the target had not yet been met, and black otherwise, using measures, eg `Colours Orders Gauge = SWITCH(TRUE(),[Orders QTD] >= [Target 2 Orders for Quarter],"Black","Red")`. 
 
 Two cards were added to display current filters for product category and country. I created an area chart to show revenue for each product category over time. Next a table of the top 10 products in terms of revenue was added, showing total revenue, total customers, orders and profit per order.  
 
@@ -82,13 +82,16 @@ In order for the user to filter by product category and country, I created a pop
 
 ![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/c4419339-cd21-4ec1-be09-bcdbf59f7450)
 
+## Creating the Stores Map Page
 
+This page contains a map visual for store location, with bubble size dependent on Profit YTD so that current performance is easily available. I used the Geography hierarchy above to enable drill down to the the store location, and added a tile slicer to filter by country. 
 
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/0492fcbc-d939-401c-98d3-86d9ad7534fa)
 
+To enable convenient checking on store performance, I added a drillthrough page with a range of visuals. A card was added to display the currently selected store location using a measure `Store Selection = IF(ISFILTERED(Stores[Country Region]),SELECTEDVALUE(Stores[Country Region],"No selection"),"No selection")`. The five products generating the most profit in the current year were displayed in a table along with their YTD profit, orders and revenue. Two gauge visuals were added to measure Revenue YTD against Revenue Goal, and Profit YTD against Profit Goal.  I created two new measures to use as the goal values, which were 20% above the same period in the previous year, eg `Profit Goal = CALCULATE([Profit YTD], SAMEPERIODLASTYEAR(Dates[Date]))*1.2`. The final visual added to the drillthrough page was a bar chart displaying the total orders by category in the store.
 
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/22e9b3b3-da32-44a8-9d58-ad4bd140558e)
 
+I created a tooltip page with a copy of the profit YTD gauge from the drillthrough page, so that by hovering over a store in the Stores Map page, you can immediately see the current profit against the goal. With the tooltip added, the region name no longer displayed when hovering over a bubble. I tried to add this as a card in the visual, but couldn't find a way to left align the text, so instead I added a text box and entered the name of the store selection measure as the value.
 
-
-
-
-
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/87ae8675-5b53-4d9a-bf2b-f49014e311a3)
