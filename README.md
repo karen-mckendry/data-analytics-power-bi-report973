@@ -52,7 +52,7 @@ The top 20 customers by revenue were displayed as a table, with conditional form
 
 Finally a date slicer was added to filter the data by year.
 
-![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/8b4dd9fc-b1a8-4e52-8cf0-5de65937f836)
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/f5e518d6-a0a7-487a-863a-137ae08a0e68)
 
 ## The Executive Summary Page
 
@@ -95,3 +95,11 @@ To enable convenient checking on store performance, I added a drillthrough page 
 I created a tooltip page with a copy of the profit YTD gauge from the drillthrough page, so that by hovering over a store in the Stores Map page, you can immediately see the current profit against the goal. With the tooltip added, the region name no longer displayed when hovering over a bubble. I tried to add this as a card in the visual, but couldn't find a way to left align the text, so instead I added a text box and entered the name of the store selection measure as the value.
 
 ![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/87ae8675-5b53-4d9a-bf2b-f49014e311a3)
+
+## Cross-Filtering and Navigation
+
+In some of the visuals, I had to edit the cross-filtering to avoid selections in those visuals inappropriately filtering others. For example, in the Executive Summary, selecting a bar in the Total Orders by Category bar chart no longer affects the card or KPI visuals, and in the Customer Detail page the top 20 customers table does not affect the other visuals. The Total Customers by Country donut chart now filters the bar chart below it so you can view Total Customers by Product Category for that country, and that bar chart no longer filters the line graph for Total Customers. In the Product Detail page, the scatter graph and the Top 10 Products table were both changed to not affect any other visuals.
+
+With all the visuals complete, I added navigation buttons to allow the user to easily move between the pages. I inserted four blank buttons in the navigation panel on the left of each page, and added a custom icon to each for the default setting, with the same icon in another colour for the 'on hover' setting. The buttons' Action was set to Page navigation with the Destination set to the relevant page (or none if it was the icon for that page).
+
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/bbdc2507-f722-445c-97a6-6dbd035e19c0)
