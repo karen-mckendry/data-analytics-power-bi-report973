@@ -103,3 +103,26 @@ In some of the visuals, I had to edit the cross-filtering to avoid selections in
 With all the visuals complete, I added navigation buttons to allow the user to easily move between the pages. I inserted four blank buttons in the navigation panel on the left of each page, and added a custom icon to each for the default setting, with the same icon in another colour for the 'on hover' setting. The buttons' Action was set to Page navigation with the Destination set to the relevant page (or none if it was the icon for that page).
 
 ![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/bbdc2507-f722-445c-97a6-6dbd035e19c0)
+
+## Create Metrics Using SQL
+
+The final part of this project was to use SQL to extract information to share with others who are not using a visualisation tool like Power BI. After connecting the the Azure database in VSCode using SQLTools, I extracted the names of all the tables in the database using a query `SELECT * FROM pg_catalog.pg_tables WHERE schemaname='public';` and saved as a csv file, then for each table I listed the columns, eg `SELECT * FROM information_schema.columns where table_name = 'orders';` and saved each as a csv.
+
+Knowing what columns were available, I was able to use queries (uploaded as question_1.sql to question_5.sql, along with outputs question_1.csv to question_5.csv) to answer the following questions:
+- the total number of staff in UK stores
+- the month in 2022 with the highest revenue
+- the store type with the highest revenue in Germany
+- for each store type, the total sales, percentage of overall sales and total orders
+- the product category with the most profit in Wiltshire, UK in 2021
+
+## Installation Instructions
+
+In your terminal input `git clone https://github.com/karen-mckendry/data-analytics-power-bi-report973.git`
+
+## Usage Instructions
+
+Open Power-BI-Project.pbix in Power BI desktop.
+
+## License
+
+GNU GENERAL PUBLIC LICENSE Version 3
