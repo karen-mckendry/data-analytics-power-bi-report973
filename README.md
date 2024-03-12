@@ -88,7 +88,7 @@ This page of the report focuses on visualisations of customer related metrics.
   
 A date slicer, allowing users to filter by year, applied to all visualisations.
 
-![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/f5e518d6-a0a7-487a-863a-137ae08a0e68)
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/6c90b317-aebf-4c58-9376-2728bdd73545)
 
 ## The Executive Summary Page
 
@@ -109,9 +109,7 @@ Total Revenue, Profit and Orders against targets - three KPI visuals showing the
   
 A date slicer, allowing users to filter by year, applied to all visualisations.
 
-
-
-![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/bbe58d7f-5eb7-4b67-a13c-e71c09efedda)
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/2397f40d-0ab4-4eb3-bcb9-40554c1613e3)
 
 ## The Product Detail Page
 
@@ -133,11 +131,11 @@ This page looks at which products are performing well, with the ability to filte
 
 ![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/d78f925e-7e0f-47ea-8969-6953401e9ba3)
 
-![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/c4419339-cd21-4ec1-be09-bcdbf59f7450)
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/59afc909-9418-4c6c-99a2-5c6a61a2df44)
 
-The screenshot below shows the finished page without any filters:  
+The screenshot below shows the page without any filters:  
 
-![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/8494ecec-79de-48bf-8d88-5cdd366dcc71)
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/839d147b-ae39-402b-a47d-b29f24fc7179)
 
 ## The Stores Map Page
 
@@ -154,7 +152,7 @@ The drillthrough page provides a range of visuals to enable convenient checking 
 3. Top 5 Products - a table showing the YTD profit, orders and revenue for the five products generating the most profit in the current year
 4. Total Orders by Category - a bar chart displaying the total orders by product category in the store
 
-![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/22e9b3b3-da32-44a8-9d58-ad4bd140558e)
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/cb7bc816-5a4e-41c1-8189-be5a21666bc6)
 
 **Tooltip Page**  
   
@@ -162,7 +160,7 @@ Hovering over any of the bubbles in the Stores Map page causes the tooltip page 
 - Profit YTD - a copy of the gauge from the drillthrough page, so that the current profit against the goal can be immediately seen
 - Store location - the region in which the store is located is displayed in a text box which uses the Store Selection measure
 
-![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/87ae8675-5b53-4d9a-bf2b-f49014e311a3)
+![image](https://github.com/karen-mckendry/data-analytics-power-bi-report973/assets/150865532/165853ec-573e-4f2d-aac9-93ea89040b6b)
 
 ## Cross-Filtering and Navigation
 
